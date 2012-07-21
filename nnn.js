@@ -1,9 +1,10 @@
 function deg2rad (degrees) { return degrees * (Math.PI / 180); }
 function loc2str (loc) { return loc.lat + '|' + loc.lon; }
 
+// Radius of the earth.
 var R = 3958.76;
 
-// Haversine formula for doing 'as the crow flies' distance
+// Haversine formula for doing 'as the crow flies' distance.
 function distancify (center, locations) {
   var centerstr = loc2str(center);
 
@@ -81,7 +82,6 @@ function solve (model, locations, categories) {
     // If we've already visited this category, continue
     if (model.categories[next.category]) continue;
 
-    // We're actually trying something!
     tries += 1;
 
     // Clone the model for recursion
@@ -93,14 +93,14 @@ function solve (model, locations, categories) {
     // Mark its category as visited.
     nextModel.categories[next.category] = true;
 
-    // Add this location into the list in the current model
+    // Add this location into the list in the current model.
     nextModel.locations.push(next);
 
     // Add its result to the results array.
     results = results.concat(solve(nextModel, locations, categories));
   }
 
-  // Sort results by distance.  Return the one with the smallest distance.
+  // Sort results by distance.
   results.sort(function (a, b) { return a.distance - b.distance; });
 
   return results;

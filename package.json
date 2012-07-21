@@ -1,18 +1,18 @@
 {
   "author": "Russ Frank <me@russfrank.us>",
-  "name": "nnn",
-  "description": "nearest neighbor of lat lons",
+  "name": "nearest-category",
+  "description": "categorized nearest neighbor tsp solver",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "github.com:russfrank/nnn"
+    "url": "github.com:russfrank/nearest-category"
   },
   "scripts" : {
     "test": "mocha -R spec -u tdd test.js"
   },
   "main": "./nnn",
   "license": "MIT",
-  "homepage": "https://github.com/russfrank/nnn",
+  "homepage": "https://github.com/russfrank/nearest-category",
   "dependencies": {},
   "devDependencies": {
     "mocha": "*",
