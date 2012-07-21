@@ -1,0 +1,25 @@
+{
+  "author": "Russ Frank <me@russfrank.us>",
+  "name": "nnn",
+  "description": "nearest neighbor of lat lons",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "github.com:russfrank/nnn"
+  },
+  "scripts" : {
+    "test": "mocha -R spec -u tdd test.js"
+  },
+  "main": "./nnn",
+  "license": "MIT",
+  "homepage": "https://github.com/russfrank/nnn",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
