@@ -40,7 +40,7 @@ function clone (item) {
 }
 
 // # of iterations
-var iterations = 5;
+var iterations = 3;
 
 // Model is an object that looks like this:
 // {
@@ -102,6 +102,8 @@ function solve (model, locations, categories) {
 
   // Sort results by distance.
   results.sort(function (a, b) { return a.distance - b.distance; });
+
+  results = results.slice(0, 10);
 
   return results;
 }
