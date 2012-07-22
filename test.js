@@ -86,6 +86,7 @@ suite('solve', function () {
     var res = nnn.solve(model, locations, categories);
 
     assert(res instanceof Array);
+    //console.log(JSON.stringify(res, false, 2));
 
     var last = 0;
     res.forEach(function (item) {
@@ -93,7 +94,6 @@ suite('solve', function () {
       last = item.distance;
     });
 
-    console.log(JSON.stringify(res, false, 2));
   });
 });
 
