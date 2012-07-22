@@ -4,7 +4,7 @@ It solves instances of the traveling salesman problem which have categories, ie,
 we have two categories of cities and we want to hit each category once.
 
 This code is used in [runr](http://runr.stevenlu.com), a Facebook Summer of Hack
-NY 2012 haackathon entry by Russ Frank, Steve Lu and Wayne Sun.
+NY 2012 hackathon entry by Russ Frank, Steve Lu and Wayne Sun.
 
 ```javascript
 
