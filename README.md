@@ -10,17 +10,23 @@ NY 2012 haackathon entry by Russ Frank, Steve Lu and Wayne Sun.
 
 var nnn = require('nearest-category');
 
+// List of locations
 var locations = [
-  {name: "Laundry Locker", lat: "37.770888", lon: "-122.422287", category:"laundry"},
-  {name: "Jack's Laundry", lat: "37.765973", lon: "-122.433382", category:"laundry"},
-  {name: "Guerrero Laundry", lat: "37.763255", lon: "-122.424031", category:"laundry"},
-  {lat: "37.765871", lon: "-122.410711", "name": "Mikado Sushi", category:"sushi"},
-  {lat: "37.771403", lon: "-122.423814", "name": "Sushi Zone", category:"sushi"},
-  {lat: "37.764596", lon: "-122.431069", "name": "Daimaru Sushi", category:"sushi"}
+  {name: "Laundry Locker", lat: "37.770888", lon: "-122.422287", category: "laundry"},
+  {name: "Jack's Laundry", lat: "37.765973", lon: "-122.433382", category: "laundry"},
+  {name: "Guerrero Laundry", lat: "37.763255", lon: "-122.424031", category: "laundry"},
+  {name: "Mikado Sushi", lat: "37.765871", lon: "-122.410711", category: "sushi"},
+  {name: "Sushi Zone", lat: "37.771403", lon: "-122.423814", category: "sushi"},
+  {name: "Daimaru Sushi", lat: "37.764596", lon: "-122.431069", category: "sushi"}
 ];
 
+// List of categories
 var categories = ['sushi', 'laundry'];
 
+// Base model.  We could solve based on a set of assumptions by setting 
+// `locations` to some partial trip.  `categories` is the list of categories
+// we've visited thus far in the model, mapped to true (ie {sushi: true} would
+// mean we've visited a sushi place).
 var model = {
   locations:[{name: "start", lat: "37.771403", lon: "-122.423814", category: false}],
   distance: 0,
