@@ -70,7 +70,6 @@ function solve (model, locations, categories) {
   if (!(locations.distances && locations.distances[currlocstr]))
     distancify(curr, locations);
 
-
   locations.sort(function(a, b) { 
     return a.distances[currlocstr] - b.distances[currlocstr]; 
   });
