@@ -1,7 +1,7 @@
 # tsp solving thing
 
 It solves instances of the traveling salesman problem which have categories, ie,
-we want to hit each category once.
+we have two categories of cities and we want to hit each category once.
 
 ```javascript
 
