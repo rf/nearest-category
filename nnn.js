@@ -66,7 +66,7 @@ function solve (model, locations, categories) {
   var curr = model.locations[model.locations.length - 1];
 
   // Sort the remaining locations by their distance to the current node.
-  if (!(locations[0].distances && locations[0].distances[loc2str(curr)]))
+  if (!(curr.distances && curr.distances[loc2str(curr)]))
     distancify(curr, locations);
 
   locations.sort(function(a, b) { return a.distance - b.distance; });
