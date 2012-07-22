@@ -37,9 +37,12 @@ var res = nnn.solve(model, locations, categories);
 
 ```
 
-It'll return an array of the five best results we were able to calculate.  
-Currently it explores 5 iterations inward; this may eventually be
+It'll return an array of the best trips we could calulate. Currently
+it explores 5 iterations inward; this may eventually be
 configurable.
+
+One trip is a complete `model`; see the above for an idea of what `model`s
+look like.
 
 Here's some sample output:
 
