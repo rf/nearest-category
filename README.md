@@ -1,6 +1,6 @@
 # nearest-category
 
-It solves instances of the traveling salesman problem which have categories, ie,
+It estimates a solution for instances of the traveling salesman problem which have categories, ie,
 we have two categories of cities and we want to hit each category once.
 
 This code is used in [runr](http://runr.stevenlu.com), a Facebook Summer of Hack
